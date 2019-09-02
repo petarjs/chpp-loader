@@ -55,6 +55,7 @@ let keywordMap = {
     'у супрoтном': 'else',
     'или': '||',
     'и': '&&',
+    'увуци': 'import',
 }
 
 function transpile(code) {
@@ -79,5 +80,5 @@ module.exports = function loader(source) {
     console.log(source)
     console.log('\n\n\n\n')
 
-    return `export default ${JSON.stringify(source)}`
+    return source
 }
